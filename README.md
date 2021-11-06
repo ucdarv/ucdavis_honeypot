@@ -1,4 +1,6 @@
-# UC Davis :: email Honeypot Framework
+# UC Davis :: Email Honeypot Framework
+
+## Abstract
 
 This program creates a honeypot framework to disrupt malicious emails, often
 targeting institutions. We create a honeypot mail server, which acts as a
@@ -7,7 +9,7 @@ also a mail forwarding system kept in place, where suspected malicious emails
 can be forwarded and the honeypot initiates a scripted communication sequence.
 The end goal is to waste time and resources of the scammers.
 
-# Structure of the Framework
+## Structure of the Framework
 
 In this section, we describe the proposed framework, and, explain each of the
 components in a detailed manner. We have a primary mail server. The mail server
@@ -52,3 +54,7 @@ entire proposal holistically.
   │    ck.                                                                   │
   └──────────────────────────────────────────────────────────────────────────┘
 ```
+
+## Development Enviornment
+
+We have implemented a simple Python module that works on a local SMTP server for sending and receiving emails on the local network. The server will be used to test our spam filtration/identification module and the honeypot afterward.
